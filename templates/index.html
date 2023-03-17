@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>QR CODE GENERATOR</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <div class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h1 class="card-title text-center">Generate QR Code</h1>
+                        <form method="POST" action="/generate_qr">
+                            <div class="form-group">
+                                <label for="employee_id">Employee ID:</label>
+                                <input type="text" class="form-control" name="employee_id" id="employee_id" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Generate QR Code</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
