@@ -23,7 +23,8 @@ def generate_qr():
 
     # convert the image to bytes using io module
     img_bytes = io.BytesIO()
-    img.save(img_bytes, format='PNG')
+    # img.save(img_bytes, format='PNG')
+    img.save(img_bytes)
     img_bytes = img_bytes.getvalue()
 
     # encode the image as a base64-encoded string using base64 module
