@@ -10,7 +10,7 @@ app.title = 'QR CODE GENERATOR'
 def index():
     return render_template('index.html')
 
-@app.route('/generate_qr', methods=['POST'])
+@app.route('/generatator', methods=['POST'])
 def generate_qr():
     # get the employee id from the form
     employee_id = request.form['employee_id']
