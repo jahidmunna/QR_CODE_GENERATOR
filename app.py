@@ -31,7 +31,7 @@ def generate_qr():
     img_b64 = base64.b64encode(img_bytes)
 
     # render the QR code image as a base64-encoded string on the qr.html template
-    return render_template('qr.html', qr_image=img_b64)
+    return render_template('qr.html', qr_image=img_b64, filename=f"{employee_id}.png")
 
 if __name__ == '__main__':
     app.run(host="0.0.0.0", port=1111, debug=True)

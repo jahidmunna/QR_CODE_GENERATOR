@@ -17,7 +17,7 @@
                     <img src="data:image/png;base64,{{ qr_image.decode('utf-8') }}" alt="QR Code" class="img-fluid">
                 </div>
                 <div class="col-md-6 offset-md-3 text-center">
-                    <a href="data:image/png;base64,{{ qr_image.decode('utf-8') }}" download="qr_code.png"
+                    <a href="data:image/png;base64,{{ qr_image.decode('utf-8') }}" download="{{ filename }}"
                         class="btn btn-primary mt-3">Download QR Code</a>
                         <br><br>
                     <a href="/" class="btn btn-primary">Generate New One</a>
